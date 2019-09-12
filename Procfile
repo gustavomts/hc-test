@@ -1,1 +1,1 @@
-web: gunicorn reports.wsgi --log-file -
+web: gunicorn reportapi.wsgi --log-file -
