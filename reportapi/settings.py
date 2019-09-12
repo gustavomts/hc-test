@@ -25,7 +25,7 @@ SECRET_KEY = 'k--if9ufx8$#1!!1swu)(*7s3!=we#d0kg)u0bzqaalce9^qwq'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', 'hc-challenge-report-api.herokuapp.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
