@@ -22,7 +22,7 @@ class ReportListView(generics.ListAPIView):
             queryset = queryset.filter(
                 Q(author=user_id) |
                 Q(supervisors=user_id) |
-                Q(response__author=user_id)
+                Q(responses__author=user_id)
             ).distinct()
 
         if pagination_offset is not None:

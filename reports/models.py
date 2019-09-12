@@ -24,7 +24,7 @@ class ReportResponse(models.Model):
         db_table = 'report_response'
 
     message = models.TextField()
-    report = models.ForeignKey(Report, on_delete=models.CASCADE, related_name='response')
+    report = models.ForeignKey(Report, on_delete=models.CASCADE, related_name='responses')
     author = models.ForeignKey(User, related_name='response_author', on_delete=models.CASCADE)
 
     def __str__(self):
