@@ -2,7 +2,7 @@ from django.db.models import Q
 from rest_framework import generics, pagination
 
 from reports.models import Report
-from .serializers import ReportSerializer
+from .serializers import ReportSerializer, AuthorSerializer
 
 
 class ReportListView(generics.ListAPIView):

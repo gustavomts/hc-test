@@ -18,4 +18,5 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^reports/', include('reports.api.urls'), name='report-api'),
+    url(r'^users/', include('users.api.urls'), name='user-api'),
 ]
