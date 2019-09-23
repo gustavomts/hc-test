@@ -14,8 +14,6 @@ class ReportListView(generics.ListAPIView):
         pagination_limit = self.request.query_params.get('pagination_limit', None)
         pagination_offset = self.request.query_params.get('pagination_offset', None)
 
-        print(pagination_limit, pagination_offset, user_id)
-
         queryset = Report.objects.all()
 
         if user_id is not None:
